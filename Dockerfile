@@ -6,6 +6,6 @@ ENV zfswatcher_package="zfswatcher_0.03-2_amd64.deb" \
 RUN ln -s /zfswatcher/zfswatcher.conf /etc/zfs/ && \
   curl -OL ${zfswatcher_link}${zfswatcher_package} && \
   dpkg -i ${zfswatcher_package} && \
-  rm ${zfswatcher_package} && \
+  rm ${zfswatcher_package}
 
-ENTRYPOINT ["zfswatcher"]
+# ENTRYPOINT ["zfswatcher"]
