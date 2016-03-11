@@ -7,6 +7,6 @@ RUN curl -OL ${zfswatcher_link}${zfswatcher_package} && \
   dpkg -i ${zfswatcher_package} && \
   rm ${zfswatcher_package}
 
-ADD start.sh /
+COPY zfswatcher /opt/bin/zfswatcher
 EXPOSE 80
-ENTRYPOINT ["/start.sh"]
+ENTRYPOINT ["/opt/bin/zfswatcher"]
