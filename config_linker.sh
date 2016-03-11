@@ -1,6 +1,6 @@
 #!/bin/sh
-persist_config_path = /zfswatcher_config/zfswatcher.conf
-temp_config_path = /etc/zfs/zfswatcher.conf
+persist_config_path=/zfswatcher_config/zfswatcher.conf
+temp_config_path=/etc/zfs/zfswatcher.conf
 
 if [ -s $persist_config_path ]; then
   rm $temp_config_path
